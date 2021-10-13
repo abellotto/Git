@@ -56,6 +56,8 @@ Serão listados todos os branchs e marcado com um "*" o branch atual
 ### Trocar de branch
     git checkout <nome_do_branch>
 
+### renomeando o branch atual
+    git branch -M <nome_do_branch>
 
 ### Revertendo Commit
 Primeiramente fazer um git log e pegar o id do commit para qual quer retornar.
@@ -106,10 +108,10 @@ enviando para o repositório criado (origin) a partir da branch (master)
 ### trazer o que tem no remoto para local
     git pull origin master
 
-### Removr um brunch remoto (master é o nome que se quer apagar)
+### Removr um branch remoto (master é o nome que se quer apagar)
     git push origin :master
-### remover um brunch local
-    git brunch -D <nome_do_brunch>
+### remover um branch local
+    git branch -D <nome_do_branch>
 
 
 
