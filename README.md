@@ -103,8 +103,15 @@ Na pr'pria página do repositório que foi criado já aparecem os comandos neces
 enviando para o repositório criado (origin) a partir da branch (master)
     git push -u origin master
 
+### trazer o que tem no remoto para local
+    git pull origin master
 
 ### Removr um brunch remoto (master é o nome que se quer apagar)
     git push origin :master
 ### remover um brunch local
     git brunch -D <nome_do_brunch>
+
+
+
+### Clonando repositório remoto na pasta atual
+    git clone <url_do_projeto_quer_clonar>
