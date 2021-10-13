@@ -1,4 +1,6 @@
 # Comandos GIT
+Criei esse repositório para ajudar em meus estudos e colaborar com outras pessoas que estão começando.
+
 
 ### Comandos Iniciais do usuário:
 
