@@ -30,4 +30,81 @@ Entte na pasta que está seu projeto.
 Será criado uma pasta oculta .git
     git init
 
-### 
+### Verificar status do repositório
+    git status
+
+### Adicionar arquivos ao monitoramento do GIT
+### Adicionando um arquivo específico
+    git add nome_do_arquivo
+### Adicionando todos os arquivos
+    git add -A
+### Fazer o commit
+    git commit -m "descritivo_da_alteração..."
+## Fazer commit adicionando os arquivos ao mesmo tempo
+    git commit -am "descritivo_da_alteração..."
+
+### Verificar todos os commit
+    git log
+
+
+### Branchs
+#### Verificando os branchs
+Serão listados todos os branchs e marcado com um "*" o branch atual 
+    git branch
+### Criar um novo branch
+    git branch <nome>
+### Trocar de branch
+    git checkout <nome_do_branch>
+
+
+### Revertendo Commit
+Primeiramente fazer um git log e pegar o id do commit para qual quer retornar.
+#### voltar com as alterações feitas antes do commit
+    git reset --soft <id_commit>
+#### voltar com as alterações feitas antes do commit e antes de adicinar os arquivos para monitoramento
+    git reset --mixed <id_commit>
+#### voltar com as alterações feitas antes do commit e apagar todas as alterações que foram feitas
+    git reset --hard <id_commit>
+
+### Reverter o commit que deu errado. No git log ainda aparece esse commit que deu errado, podendo usar ele posteriormente, após correções.
+    git revert --no-edit <id_commit_que_deu_errado>
+
+
+### Voltar um arquivo específico para antes das alterações. o "HEAD" faz pegar dentro do branch atual.
+    git checkout HEAD --<nome_do_arquivo>
+
+
+### Verificando diferenças nos arquivos antes de fazer o commit
+    git diff
+### Verificando as diferenças em um arquivo específico
+    git diff <nome_do_arquivo>
+### saber apenas os nomes dos arquivos modificados
+    git diff --name-only
+
+
+### gitignore
+Quando não quer que alguns arquivos ou pastas sejam monitorados pelo git, preicsa criar um arquivo .gitignore dentro da pasta e incluir os nomes dos arquivos/pastas em cada linha.
+
+
+## Criar repositório no GitHub
+Para conseguir enviar o repositório será necessário configurar a chavve SSH. No site existe um tutorial para configurar e criar essa chave.
+
+Criar um repositório pelo site do Github
+Na pr'pria página do repositório que foi criado já aparecem os comandos necessários.
+
+### adicionar um repositório remoto do repositório local 
+    git remote add origin https://.......
+### verificar o repositorio criado
+    git remote
+### verificar mais detalhes
+    git remote -v
+
+### enviar conteudos locais para o remoto
+enviando para o repositório criado (origin) a partir da branch (master)
+    git push -u origin master
+
+
+### Removr um brunch remoto (master é o nome que se quer apagar)
+    git push origin :master
+### remover um brunch local
+    git brunch -D <nome_do_brunch>
