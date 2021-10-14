@@ -8,7 +8,7 @@ Criei esse repositório para ajudar em meus estudos e colaborar com outras pesso
     git config --global user.name "seu nome..."
 
 #### Definir seu e-mail:
-    git config --global user.email "seu nome..."
+    git config --global user.email "seu email..."
 
 #### Definir seu editor:
     git config --global core.editor VScode
