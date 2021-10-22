@@ -103,6 +103,13 @@ Na própria página do repositório que foi criado já aparecem os comandos nece
 Enviando para o repositório criado (origin) a partir da branch (master)
     git push -u origin master
 
+
+### Roteiro para o GitHub
+git remote add origin https://.......
+git branch -M main
+git push -u origin main
+
+
 #### Trazer o que tem no repositório remoto (origin) para local (master)
     git pull origin master
 
