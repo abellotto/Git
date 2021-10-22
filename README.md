@@ -105,9 +105,9 @@ Enviando para o repositório criado (origin) a partir da branch (master)
 
 
 ### Roteiro para o GitHub
-git remote add origin https://.......
-git branch -M main
-git push -u origin main
+    git remote add origin https://.......
+    git branch -M main
+    git push -u origin main
 
 
 #### Trazer o que tem no repositório remoto (origin) para local (master)
